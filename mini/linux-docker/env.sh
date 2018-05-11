@@ -9,6 +9,7 @@ export coc_io_img=hub.docker.com/r/jcalzz/repo1/coc-io
 export coc_player_img=hub.docker.com/r/jcalzz/repo1/coc-player
 export coc_clan_img=hub.docker.com/r/jcalzz/repo1/coc-clan
 export coc_discovery_img=hub.docker.com/r/jcalzz/repo1/coc-discovery
+export coc_war_img=hub.docker.com/r/jcalzz/repo1/coc-war
 
 
 export conf_repository=https://gitee.com/wsa10054/app-configs.git
