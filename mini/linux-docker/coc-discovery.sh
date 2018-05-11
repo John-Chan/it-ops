@@ -1,6 +1,6 @@
 #!/bin/sh
 
-docker run --rm -itd -p 18800:18800 --network=host  --name="coc-discovery"  \
+docker run --rm -itd -p 18800:18800 --network=host  --name="coc-discovery"  --restart unless-stopped\
 ${coc_discovery_img} \
 --server.port=18800 \
 --spring.cloud.config.label=$conf_label \
