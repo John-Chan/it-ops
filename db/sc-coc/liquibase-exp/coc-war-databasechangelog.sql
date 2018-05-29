@@ -25,7 +25,7 @@ CREATE TABLE `databasechangelog`  (
   `ID` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `AUTHOR` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `FILENAME` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `DATEEXECUTED` datetime(0) NULL,
+  `DATEEXECUTED` datetime(0) NOT NULL,
   `ORDEREXECUTED` int(11) NOT NULL,
   `EXECTYPE` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `MD5SUM` varchar(35) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
@@ -41,7 +41,10 @@ CREATE TABLE `databasechangelog`  (
 -- ----------------------------
 -- Records of databasechangelog
 -- ----------------------------
-INSERT INTO `databasechangelog` VALUES ('1', 'cj', 'classpath:db/changelog/changelog-1.sql', '2018-05-16 10:34:36', 1, 'EXECUTED', '7:9df8dbe447c060dbfe17206ea9eed740', 'sql', '', NULL, '3.5.3', NULL, NULL, '6438231149');
-INSERT INTO `databasechangelog` VALUES ('2', 'cj', 'classpath:db/changelog/changelog-1.sql', '2018-05-16 10:34:37', 2, 'EXECUTED', '7:bb59b1db6d60baf0c48994c3056e38f3', 'sql', '', NULL, '3.5.3', NULL, NULL, '6438231149');
+INSERT INTO `databasechangelog` VALUES ('1', 'cj', 'classpath:db/changelog/changelog-1.sql', '2018-05-29 22:37:03', 1, 'EXECUTED', '7:9df8dbe447c060dbfe17206ea9eed740', 'sql', '', NULL, '3.5.3', NULL, NULL, '7604623651');
+INSERT INTO `databasechangelog` VALUES ('2', 'cj', 'classpath:db/changelog/changelog-1.sql', '2018-05-29 22:37:03', 2, 'EXECUTED', '7:bb59b1db6d60baf0c48994c3056e38f3', 'sql', '', NULL, '3.5.3', NULL, NULL, '7604623651');
+INSERT INTO `databasechangelog` VALUES ('3', 'cj', 'classpath:db/changelog/changelog-1.sql', '2018-05-29 22:37:04', 3, 'EXECUTED', '7:fec32dc386f5ed3d516fcc20b387eeb8', 'sql', '', NULL, '3.5.3', NULL, NULL, '7604623651');
+INSERT INTO `databasechangelog` VALUES ('4', 'cj', 'classpath:db/changelog/changelog-1.sql', '2018-05-29 22:37:04', 4, 'EXECUTED', '7:38a4897aaa99bbaefa9400ba4286d875', 'sql', '', NULL, '3.5.3', NULL, NULL, '7604623651');
 
 SET FOREIGN_KEY_CHECKS = 1;
+

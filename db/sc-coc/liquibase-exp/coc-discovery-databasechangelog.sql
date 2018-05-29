@@ -25,7 +25,7 @@ CREATE TABLE `databasechangelog`  (
   `ID` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `AUTHOR` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `FILENAME` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `DATEEXECUTED` datetime(0) NULL,
+  `DATEEXECUTED` datetime(0) NOT NULL,
   `ORDEREXECUTED` int(11) NOT NULL,
   `EXECTYPE` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `MD5SUM` varchar(35) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
@@ -41,8 +41,10 @@ CREATE TABLE `databasechangelog`  (
 -- ----------------------------
 -- Records of databasechangelog
 -- ----------------------------
-INSERT INTO `databasechangelog` VALUES ('1', 'cj', 'classpath:db/changelog/changelog-1.sql', '2018-05-16 10:02:48', 1, 'EXECUTED', '7:273ea2bae31124f014014af1e8180194', 'sql', '', NULL, '3.5.3', NULL, NULL, '6436322685');
-INSERT INTO `databasechangelog` VALUES ('2', 'cj', 'classpath:db/changelog/changelog-2.sql', '2018-05-16 10:02:48', 2, 'EXECUTED', '7:14e6fbaa9a2b9602682379955a1e724b', 'sql', '', NULL, '3.5.3', NULL, NULL, '6436322685');
-INSERT INTO `databasechangelog` VALUES ('3', 'cj', 'classpath:db/changelog/changelog-2.sql', '2018-05-16 10:02:49', 3, 'EXECUTED', '7:7c5cabd63f810431b2e340afd4897f6a', 'sql', '', NULL, '3.5.3', NULL, NULL, '6436322685');
+INSERT INTO `databasechangelog` VALUES ('1', 'cj', 'classpath:db/changelog/changelog-1.sql', '2018-05-29 22:40:36', 1, 'EXECUTED', '7:273ea2bae31124f014014af1e8180194', 'sql', '', NULL, '3.5.3', NULL, NULL, '7604835894');
+INSERT INTO `databasechangelog` VALUES ('2', 'cj', 'classpath:db/changelog/changelog-2.sql', '2018-05-29 22:40:36', 2, 'EXECUTED', '7:14e6fbaa9a2b9602682379955a1e724b', 'sql', '', NULL, '3.5.3', NULL, NULL, '7604835894');
+INSERT INTO `databasechangelog` VALUES ('3', 'cj', 'classpath:db/changelog/changelog-2.sql', '2018-05-29 22:40:36', 3, 'EXECUTED', '7:7c5cabd63f810431b2e340afd4897f6a', 'sql', '', NULL, '3.5.3', NULL, NULL, '7604835894');
+INSERT INTO `databasechangelog` VALUES ('4', 'cj', 'classpath:db/changelog/changelog-2.sql', '2018-05-29 22:40:36', 4, 'EXECUTED', '7:3adce05b94954d617d92c5061fd02a87', 'sql', '', NULL, '3.5.3', NULL, NULL, '7604835894');
+INSERT INTO `databasechangelog` VALUES ('5', 'cj', 'classpath:db/changelog/changelog-2.sql', '2018-05-29 22:40:36', 5, 'EXECUTED', '7:8aa5a81dd81e03e5f65dc3606056442f', 'sql', '', NULL, '3.5.3', NULL, NULL, '7604835894');
 
 SET FOREIGN_KEY_CHECKS = 1;
